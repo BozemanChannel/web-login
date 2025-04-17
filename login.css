@@ -1,0 +1,20 @@
+* {
+    background-color: rgb(32, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+.login-form {
+    width: 21px;
+    padding: 0px 2px;
+    margin: 0px;
+    border: none;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.log-in-form {
+    width: 21px;
+}
