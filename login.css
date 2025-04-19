@@ -1,20 +1,61 @@
 * {
     background-color: rgb(32, 30, 30);
     color: white;
-    text-align: center;
 }
 
-.login-form {
+.login {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.login-icon {
+    width: 29px;
+}
+
+input[type="email"],
+input[type="password"] {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 7px;
+    color: white;
+    outline: none;
+    transition: 0.4s;
+    margin-left: 6px;
+    width: 100%;
+    max-width: 170px;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: rgb(255, 0, 242);
+    box-shadow: 0 0 8px rgba(255, 0, 242, 0.5);
+}
+
+.login-button img {
     width: 21px;
-    padding: 0px 2px;
-    margin: 0px;
-    border: none;
+    height: 21px;
+    object-fit: contain;
 }
 
-.button {
+.login-button {
     cursor: pointer;
+    background-color: rgb(73, 18, 202);
+    border: 2px solid rgba(184, 122, 184, 0.178);
+    border-radius: 14px;
+    padding: 5px 19px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 5px rgba(107, 12, 107, 0.5);
 }
 
-.log-in-form {
-    width: 21px;
+.login-button:hover {
+    background-color: rgb(255, 0, 242);
+    box-shadow: 0 0 12px rgba(255, 0, 119, 0.8);
 }
+
+
